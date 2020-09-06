@@ -1,6 +1,6 @@
 # JavaScript 1 - Module 3
 
-## Lesson Tasks 3 Questions
+## Lesson Task 3 Questions
 
 ### Question 1
 
