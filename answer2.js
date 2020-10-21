@@ -14,16 +14,15 @@ function getCatFacts() {
 
 getCatFacts();
 
-
 // with arrow functions
 function getCatFacts2() {
     fetch("https://cat-fact.herokuapp.com/facts")
-        .then((response) => response.json()
+        .then((response) => response.json())
         .then((results) => {
             const facts = results.all;
             console.log(facts.length);
         })
-        .catch((error) =>  console.log(error)));
+        .catch((error) => console.log(error));
 }
 
 getCatFacts2();
