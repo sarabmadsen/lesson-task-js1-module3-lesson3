@@ -1,3 +1,17 @@
+fetch("https://cat-fact.herokuapp.com/facts")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (results) {
+        const facts = results.all;
+        console.log(facts.length);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
+
+// we can also enclose the code in a function and then call it
+// this will have the same effect but means the code is reusable and can be called again from somewhere else in the code
 function getCatFacts() {
     fetch("https://cat-fact.herokuapp.com/facts")
         .then(function (response) {
