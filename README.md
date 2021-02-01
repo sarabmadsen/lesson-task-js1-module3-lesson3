@@ -25,8 +25,7 @@ async function getCatFacts() {
   try {
     const response = await fetch("https://cat-fact.herokuapp.com/facts");
     const results = await response.json();
-    const facts = results.all;
-    console.log(facts.length);
+    console.log(results.length);
   } catch (error) {
     console.log(error);
   }
