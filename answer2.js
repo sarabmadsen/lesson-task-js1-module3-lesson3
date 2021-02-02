@@ -3,8 +3,7 @@ fetch("https://cat-fact.herokuapp.com/facts")
         return response.json();
     })
     .then(function (results) {
-        const facts = results.all;
-        console.log(facts.length);
+        console.log(results.length);
     })
     .catch(function (error) {
         console.log(error);
@@ -18,8 +17,7 @@ function getCatFacts() {
             return response.json();
         })
         .then(function (results) {
-            const facts = results.all;
-            console.log(facts.length);
+            console.log(results.length);
         })
         .catch(function (error) {
             console.log(error);
@@ -33,8 +31,7 @@ function getCatFacts2() {
     fetch("https://cat-fact.herokuapp.com/facts")
         .then((response) => response.json())
         .then((results) => {
-            const facts = results.all;
-            console.log(facts.length);
+            console.log(results.length);
         })
         .catch((error) => console.log(error));
 }
